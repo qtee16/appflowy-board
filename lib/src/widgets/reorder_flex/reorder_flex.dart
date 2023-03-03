@@ -599,6 +599,7 @@ class ReorderFlexState extends State<ReorderFlex>
       return child;
     } else {
       return SingleChildScrollView(
+        physics: ClampingScrollPhysics(),
         scrollDirection: widget.config.direction,
         controller: _scrollController,
         child: child,
