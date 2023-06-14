@@ -205,9 +205,12 @@ class _AppFlowyBoardGroupState extends State<AppFlowyBoardGroup> {
 
   @override
   Widget build(BuildContext context) {
-    return BoardOverlay(
-      key: _columnOverlayKey,
-      initialEntries: [_overlayEntry],
+    return Container(
+      height: widget.dataSource.groupData.items.length == 0 ? 200 : null,
+      child: BoardOverlay(
+        key: _columnOverlayKey,
+        initialEntries: [_overlayEntry],
+      ),
     );
   }
 
