@@ -211,7 +211,6 @@ import 'dart:collection';
    @override
    Widget build(BuildContext context) {
      return Container(
-       height: widget.dataSource.groupData.items.length == 0 ? 200 : null,
        child: BoardOverlay(
          key: _columnOverlayKey,
          initialEntries: [_overlayEntry],
