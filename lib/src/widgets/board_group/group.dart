@@ -178,7 +178,7 @@ import 'dart:collection';
          reorderFlex = Flexible(
            fit: widget.stretchGroupHeight ? FlexFit.tight : FlexFit.loose,
            child: Scrollbar(
-             thumbVisibility: true,
+             // thumbVisibility: true,
              controller: widget.scrollController,
              thickness: 5,
              child: Padding(padding: widget.itemMargin, child: reorderFlex),
